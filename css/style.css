@@ -88,6 +88,12 @@ main {
   text-align: center;
 }
 
+.parallax__news {
+  /* centering */
+  display: table-cell;
+  vertical-align: middle;
+}
+
 
 /**
  * Parallax-section title
