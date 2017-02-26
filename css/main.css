@@ -1,0 +1,65 @@
+/* www.alsina.xyz | Alchemically bonded by Sebastian Alsina (@youngseebi) */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: dimgrey;
+    font-family: sans-serif !important;
+}
+
+
+/*
+* LOADER SCREEN
+* [==============]
+*/
+
+video#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/shake-video-bg-screenshot.png) no-repeat;
+    background-size: cover;
+}
+
+.buttons {
+    height: auto;
+    width: auto;
+    position: fixed;
+    z-index: 100;
+    bottom: 40px;
+    right: 40px;
+}
+
+.buttons a {
+    display: block;
+    text-align: right;
+    
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+    opacity: 0.7;
+    transition: 0.3s ease all;
+}
+
+.buttons a:hover {
+    opacity: 1;
+}
+
+.buttons a:nth-of-type(1) {
+    margin-bottom: 8px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-width: 768px) {
+
+}
