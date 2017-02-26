@@ -7,7 +7,7 @@ body {
     width: 100%;
     background-color: white;
     color: dimgrey;
-    font-family: sans-serif !important;
+    font-family: 'Arial Bold', sans-serif;
 }
 
 
@@ -41,15 +41,22 @@ video#bg-video {
     right: 40px;
 }
 
-.buttons a {
+.buttons h1, a {
     display: block;
     text-align: right;
-    
     color: white;
     font-weight: 900;
     font-size: 1.5em;
-    opacity: 0.7;
     transition: 0.3s ease all;
+}
+
+.buttons h1 {
+    font-size: 4em;
+/*    margin-bottom: 16px;*/
+}
+
+.buttons a {
+    opacity: 0.7;
 }
 
 .buttons a:hover {
@@ -58,6 +65,14 @@ video#bg-video {
 
 .buttons a:nth-of-type(1) {
     margin-bottom: 8px;
+}
+
+.buttons a:nth-of-type(2) {
+    margin-bottom: 16px;
+}
+
+.buttons i {
+    margin-left: 4px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-width: 768px) {
