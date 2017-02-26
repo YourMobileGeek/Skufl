@@ -24,8 +24,16 @@
 </head>
 
 <body>
+    <script>
+        $(document).ready(function () {
+            $("#bg-video").click(function () {
+                var bool = $(this).prop("muted");
+                $(this).prop("muted", !bool);
+            });
+        });
+    </script>
 
-    <video id="bg-video" playsinline autoplay muted loop poster="shake-video-bg-screenshot.jpg">
+    <video id="bg-video" playsinline autoplay loop poster="shake-video-bg-screenshot.jpg">
         <source src="images/bg.mp4" type="video/mp4">
     </video>
 
