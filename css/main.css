@@ -41,7 +41,7 @@ video#bg-video {
     right: 40px;
 }
 
-.buttons h1, a {
+.buttons h1, h2, a {
     display: block;
     text-align: right;
     color: white;
@@ -52,7 +52,12 @@ video#bg-video {
 
 .buttons h1 {
     font-size: 4em;
-/*    margin-bottom: 16px;*/
+}
+
+.buttons h2 {
+    font-size: 0.8em;
+    margin-bottom: 16px;
+    opacity: 0.3;
 }
 
 .buttons a {
