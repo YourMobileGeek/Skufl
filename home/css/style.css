@@ -226,7 +226,10 @@ ul{
 	        transform-origin: 50% 50%;
 }
 
-
+#embeded-sc {
+    width: 90%;
+    max-width: 400px;
+}
 
 
 
