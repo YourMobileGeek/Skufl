@@ -37,16 +37,18 @@ video#bg-video {
     width: auto;
     position: fixed;
     z-index: 100;
-    bottom: 40px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
 }
+
 
 .buttons h1, h2, a {
     display: block;
-    text-align: right;
+    /* text-align: right; */
     color: white;
     font-weight: 900;
-    font-size: 1.5em;
+    font-size: x-large;
     transition: 0.3s ease all;
 }
 
