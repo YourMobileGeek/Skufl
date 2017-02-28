@@ -192,6 +192,68 @@ ul {
     font-family: 'Arial Bold', sans-serif;
 }
 
+.mini-squares div {
+    float: left;
+    width: 15px;
+    height: 15px;
+}
+
+.mini-squares div:nth-of-type(1) {
+    background-color: #aea89e;
+}
+
+.mini-squares div:nth-of-type(1):hover {
+    background-color: #938874;
+}
+
+.mini-squares div:nth-of-type(2) {
+    background-color: #aceade;
+}
+
+.mini-squares div:nth-of-type(2):hover {
+    background-color: #78c8b8;
+}
+
+.mini-squares div:nth-of-type(3) {
+    background-color: #9dddee;
+}
+
+.mini-squares div:nth-of-type(3):hover {
+    background-color: #6bb7cc;
+}
+
+.mini-squares div:nth-of-type(4) {
+    background-color: #d2b6e5;
+}
+
+.mini-squares div:nth-of-type(4):hover {
+    background-color: #a880c3;
+}
+
+.mini-squares div:nth-of-type(5) {
+    background-color: #F4b3dc;
+}
+
+.mini-squares div:nth-of-type(5):hover {
+    background-color: #d27db2;
+}
+
+.mini-squares div:nth-of-type(6) {
+    background-color: #fbcad2;
+}
+
+.mini-squares div:nth-of-type(6):hover {
+    background-color: #d9919c;
+}
+
+.mini-squares div:nth-of-type(7) {
+    background-color: #aea89e;
+}
+
+.mini-squares div:nth-of-type(7):hover {
+    background-color: #8c806c;
+}
+
 
 /*------------------------------------*\
     #Scroll-arrow
