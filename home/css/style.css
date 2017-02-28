@@ -17,24 +17,23 @@ main {
     width: 100%;
     height: auto;
     padding: 6px;
-    background-color: black;
+    background-color: #FEAFBD;
     color: pink;
-    text-align: right;
+    text-align: center;
     white-space: nowrap;
     overflow: auto;
     position: fixed;
     z-index: 999;
+    font-size: 1.4em;
 }
 
 .social-bar a {
-    color: pink;
-    margin-left: 3px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 6px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-width: 768px) {
-    .social-bar {
-        text-align: left;
-    }
+    .social-bar {}
 }
 
 
@@ -142,11 +141,11 @@ main {
  */
 
 .parallax--img-cat1 {
-    background-image: url(http://oi66.tinypic.com/2ep1vh5.jpg);
+    background-image: url(../images/for-web-3.png);
 }
 
 .parallax--img-cat2 {
-    background-image: url(http://oi66.tinypic.com/mhqj9.jpg);
+    background-image: url(../images/for-web-4.png);
 }
 
 .container {
@@ -171,6 +170,15 @@ main {
     top: 30px;
     width: 190px;
     z-index: 2;
+}
+
+@media only screen and (min-device-width: 320px) and (max-width: 768px) {
+    .container {
+        margin-left: -20px;
+    }
+    .menu_fixed_left {
+        margin-left: 20px;
+    }
 }
 
 ul {
