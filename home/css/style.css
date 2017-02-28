@@ -1,15 +1,39 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body,
 main {
-  height: 100%;
+    height: 100%;
 }
 
 
+/*------------------------------------*\
+    Social Bar
+\*------------------------------------*/
 
+.social-bar {
+    width: 100%;
+    height: auto;
+    padding: 6px;
+    background-color: black;
+    color: pink;
+    text-align: right;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.social-bar a {
+    color: pink;
+    margin-left: 3px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-width: 768px) {
+    .social-bar {
+        text-align: left;
+    }
+}
 
 
 /*------------------------------------*\
@@ -17,44 +41,42 @@ main {
 \*------------------------------------*/
 
 #skrollr-body {
-  height: 100%;
-  overflow: visible;
-  position: relative;
-  z-index: 2;
+    height: 100%;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
 }
 
 .skrollr-parallax {
-  position: fixed;
-  z-index: 1;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;  
-  overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .no-skrollr .skrollr-parallax {
-  display: none !important;
+    display: none !important;
 }
 
 .skrollr-parallax__image {
-  display: none;
-  position: absolute;  
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;  
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .skrollr-parallax__image.skrollable-between {
-  display: block;
+    display: block;
 }
-
-
 
 
 /*------------------------------------*\
@@ -62,49 +84,54 @@ main {
 \*------------------------------------*/
 
 .parallax {
-	position: relative;
-	display: table;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  background: #ccc center no-repeat;
-  background-size: cover;
-  overflow: hidden;
+    position: relative;
+    display: table;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    background: #ccc center no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
+
 /* When Skrollr plugin is active remove bg image and reset bg property */
+
 .skrollr .parallax {
-  background: transparent !important; /* !important override inline style */  
+    background: transparent !important;
+    /* !important override inline style */
 }
 
 
 /**
  * Parallax-section body centered
  */
+
 .parallax__body {
-	/* centering */
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+    /* centering */
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .parallax__news {
-  /* centering */
-  display: table-cell;
-  vertical-align: middle;
+    /* centering */
+    display: table-cell;
+    vertical-align: middle;
 }
 
 
 /**
  * Parallax-section title
  */
+
 .parallax__title {
-	font-size: 60px;
-  line-height: 1;
-  color: #fff;
-  text-align: center; 
-  max-width: 800px;
-  margin: 20px auto;
+    font-size: 60px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 
@@ -113,58 +140,55 @@ main {
  */
 
 .parallax--img-cat1 {
-  background-image: url(http://oi66.tinypic.com/2ep1vh5.jpg);
+    background-image: url(http://oi66.tinypic.com/2ep1vh5.jpg);
 }
 
 .parallax--img-cat2 {
-  background-image: url(http://oi66.tinypic.com/mhqj9.jpg);
+    background-image: url(http://oi66.tinypic.com/mhqj9.jpg);
 }
 
 .container {
-  height:200%;
-  left:0;
-  position:absolute;
-  top:0;
-  -webkit-transition: all 1s ease-in-out;
-  transition:all 1s ease-in-out;
-  width:200%;
-  &.bottom {
-    top:-100%;
-  }
-  &.right {
-    left:-75%;
-  }
+    height: 200%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    width: 200%;
+    &.bottom {
+        top: -100%;
+    }
+    &.right {
+        left: -75%;
+    }
 }
 
-.menu_fixed_left{
-  position: fixed;
-  left: calc(5% - 30px);
-  top: 0;
-  width:190px;
-  z-index: 2;
-}
-ul{
-  list-style-type: none;
-  padding :15px;
-  font-family:'Arial Bold', sans-serif;
-  color: #ffffff;
-  font-weight: bold;
-  opacity: 0.5;
-
+.menu_fixed_left {
+    position: fixed;
+    left: calc(5% - 30px);
+    top: 0;
+    width: 190px;
+    z-index: 2;
 }
 
+ul {
+    list-style-type: none;
+    padding: 15px;
+    font-family: 'Arial Bold', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    opacity: 0.5;
+}
 
 #quoteContainer {
-	padding-top: 10%;
-	padding-bottom: 0%;
-	text-align: center;
-	color: #ffffff;
-	font-weight: bold;
-	font-size: xx-large;
-	font-family: 'Arial Bold', sans-serif;
+    padding-top: 10%;
+    padding-bottom: 0%;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Arial Bold', sans-serif;
 }
-
-
 
 
 /*------------------------------------*\
@@ -172,65 +196,59 @@ ul{
 \*------------------------------------*/
 
 .scroll-arrow {
-	position: absolute;
-  z-index: 3;  /* above parallax */
-  left: 50%;
-  bottom: 30px;
-  width: 42px;
-  height: 20px;
-  background: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSI5NiAxNjAgMzIwIDE5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzk2LjYgMTYwbDE5LjQgMjAuN0wyNTYgMzUyIDk2IDE4MC43bDE5LjMtMjAuN0wyNTYgMzEwLjV6Ii8+PC9zdmc+') center no-repeat;
-  margin-left: -23px;
-  -webkit-transition: .25s;
-  transition: .25s;
-  cursor: pointer;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
-  opacity: .8;
-  -webkit-tap-highlight-color: transparent;
-
-  /* Hide text */
-  font-size: 0;
-  color: transparent;
+    position: absolute;
+    z-index: 3;
+    /* above parallax */
+    left: 50%;
+    bottom: 30px;
+    width: 42px;
+    height: 20px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSI5NiAxNjAgMzIwIDE5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzk2LjYgMTYwbDE5LjQgMjAuN0wyNTYgMzUyIDk2IDE4MC43bDE5LjMtMjAuN0wyNTYgMzEwLjV6Ii8+PC9zdmc+') center no-repeat;
+    margin-left: -23px;
+    -webkit-transition: .25s;
+    transition: .25s;
+    cursor: pointer;
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+    opacity: .8;
+    -webkit-tap-highlight-color: transparent;
+    /* Hide text */
+    font-size: 0;
+    color: transparent;
 }
 
 .scroll-arrow:hover,
 .scroll-arrow:focus {
-  opacity: 1;
+    opacity: 1;
 }
 
 .scroll-arrow:focus {
-  outline: none;
+    outline: none;
 }
 
 .scroll-arrow:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -20px;
-  bottom: -20px;
-  left: -20px;
-  right: -20px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
 }
-
-
-
 
 
 /**
  * Scroll to top (in the footer)
  */
+
 .scroll-arrow--top {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-	-webkit-transform-origin: 50% 50%;
-	        transform-origin: 50% 50%;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
 }
 
 #embeded-sc {
     width: 90%;
     max-width: 400px;
 }
-
-
-
-
